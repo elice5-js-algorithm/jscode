@@ -1,1 +1,3 @@
-
+function solution(arr) {
+    return arr.reduce((value,index) => value + index) / arr.length;
+}
