@@ -4,10 +4,10 @@
 function solution(s){
     let pCount = 0;
     let yCount = 0;
-    s.toLowerCase().split('').forEach((el)=>{
+    s.toLowerCase().split('').forEach((el)=>{ //다 소문자로 놓고 비교
         if(el === 'p'){pCount += 1}
         else if(el === 'y'){yCount += 1}
     })
-    if(pCount === yCount){return true}
+    if(pCount === yCount){return true} //둘 다 0인 경우도 어차피 포함되므로 
     else {return false}
 }
