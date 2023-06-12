@@ -1,1 +1,6 @@
-
+function solution(n)
+{
+    var answer = 0;
+    answer = String(n).split('')
+    return answer.reduce((v, v1) => v + Number(v1),0 );
+}
