@@ -1,3 +1,9 @@
 function solution(n) {
-    return Number.isInteger(Math.sqrt(n)) === false ? -1 : Math.pow(Math.floor(Math.sqrt(n) + 1), 2);
+// Number.isInteger은 정수를 판별해 주는 함수, Math.sqrt은 전달 받은 숫자의 제곱근을 구하는 함수
+// ex) Number.isInteger(2.1232) = false , 정수 일때 true 반환
+// ex) Math.sqrt(49) = 7
+// Math.pow는 첫번째 인자 값으로 두번째 인자 값 만큼 곱하는 함수
+// Math.pow(2, 3) = 8
+// 따라서 제곱근을 구한 후 1을 더한 숫자를 2제곱해준다
+    return Number.isInteger(Math.sqrt(n)) === false ? -1 : Math.pow(Math.sqrt(n) + 1, 2);
 }
