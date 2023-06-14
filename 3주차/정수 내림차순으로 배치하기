@@ -1,3 +1,5 @@
 function solution(n) {
+    // 숫자로 넘어오는 n을 문자열로 변환후 배열로 만든다
+    // 내림차순으로 정렬 후 합친 후 다시 숫자로 변환해준다
     return Number(String(n).split("").sort().reverse().join(""));
 }
