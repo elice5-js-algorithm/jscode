@@ -1,1 +1,17 @@
-
+function solution(a, b) {
+    let answer = 0;
+    if(a > b){
+        for(let i = b; i <= b +(a - b); i++){
+            answer += i;
+        }
+    }
+    else if(a < b){
+        for(let i = a; i <= a + (b -a); i++){
+            answer += i;
+        }
+    }
+    else if(a === b){
+        return a
+    }
+    return answer
+}
