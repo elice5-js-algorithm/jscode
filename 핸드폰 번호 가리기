@@ -1,0 +1,8 @@
+function solution(phone_number) {
+    
+    const newArr = new Array(phone_number.length-4).fill('*') // fill() 배열의 시작 인덱스부터 끝 인덱스의 이전까지 괄호 속 값으로 채움
+    let newNum = phone_number.slice(-4);
+    newArr.push(newNum)
+    
+    return newArr.join('');
+}
