@@ -1,1 +1,4 @@
-
+function solution(s) {
+    var answer = s.length / 2;
+    return s.length % 2 === 1 ? s.charAt(answer) :s.charAt(answer -1) + s.charAt(answer);
+}
